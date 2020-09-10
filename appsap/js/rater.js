@@ -72,7 +72,7 @@ class UserRater extends HTMLElement {
 
         stars.forEach(star => {
             star.addEventListener('click', (ev) => this.setRating(ev));
-            star.addEventListener('mouseover', (ev) => this.ratingHover(ev));
+            star.addEventListener('mouseover', (ev) => this.ratingHover());
         });
     }
 }
